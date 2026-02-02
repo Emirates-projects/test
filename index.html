@@ -3,168 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇦🇪 مشاريع الإمارات | متاجر إلكترونية UAE Pro</title>
-    <meta name="description" content="مشاريع الإمارات: أفضل متاجر إلكترونية مخصصة للـ UAE. WooCommerce، dropshipping، Google Ads، SEO إماراتي. تواصل واتساب +201110760081">
-    <!-- Schema -->
+    <title>مشاريع الإمارات | متاجر إلكترونية احترافية UAE</title>
+    <meta name="description" content="تصميم متاجر WooCommerce مخصصة للإمارات. Dropshipping، Google Ads، SEO محلي. +201110760081">
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "مشاريع الإمارات",
-        "url": "https://makhzoonalemarat-del.github.io",
-        "potentialAction": {
-            "@type": "ContactAction",
-            "url": "https://wa.me/201110760081",
-            "name": "تواصل واتساب"
-        }
+        "@context": "https://schema.org", "@type": "Organization",
+        "name": "مشاريع الإمارات", "url": "https://makhzoonalemarat-del.github.io",
+        "contactPoint": {"@type": "ContactPoint", "telephone": "+201110760081"}
     }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --green: #007A3D; --red: #CE1126; --gold: #FFD700; --white: #FFF; --black: #000;
-            --neon-g: #00FF41; --shadow-g: 0 0 20px #00FF41;
+            --green: #007A3D; --red: #CE1126; --gold: #D4AF37; --dark: #1A1A1A; --light: #F8F9FA;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Noto Sans Arabic', sans-serif; overflow-x: hidden; background: #000;
-            perspective: 1px; height: 100vh; position: relative;
+            font-family: 'Cairo', sans-serif; line-height: 1.7; color: var(--dark); overflow-x: hidden;
+            background: linear-gradient(135deg, var(--light) 0%, #E8F4F8 100%);
         }
-        #particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
-        .container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 10; }
-        /* Parallax Hero */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        /* Hero Elegant */
         .hero {
-            height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;
-            background: linear-gradient(45deg, var(--green), var(--red)); position: relative;
-            transform-style: preserve-3d;
+            min-height: 90vh; display: flex; align-items: center; position: relative; overflow: hidden;
+            background: linear-gradient(135deg, var(--green) 0%, #009B50 50%, var(--red) 100%);
         }
-        .hero::before {
-            content: '🇦🇪'; font-size: 20rem; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotateY(360deg);
-            animation: flagFloat 6s ease-in-out infinite; opacity: 0.1; z-index: -1;
+        .hero-content {
+            max-width: 800px; text-align: center; color: white; padding: 2rem;
+            animation: fadeInUp 1s ease-out;
         }
         h1 {
-            font-size: clamp(3rem, 8vw, 7rem); background: linear-gradient(45deg, var(--white), var(--gold));
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-            text-shadow: var(--shadow-g); animation: neonGlow 2s ease-in-out infinite alternate;
-            margin-bottom: 1.5rem; filter: drop-shadow(0 0 10px var(--neon-g));
+            font-size: clamp(3rem, 6vw, 5rem); font-weight: 700; margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, white 30%, #FFD700 100%); -webkit-background-clip: text;
+            background-clip: text; color: transparent;
         }
-        .tagline {
-            font-size: clamp(1.2rem, 3vw, 2rem); color: var(--white); opacity: 0.95;
-            text-shadow: 0 0 10px rgba(255,255,255,0.5); margin-bottom: 3rem;
+        .hero p {
+            font-size: 1.4rem; font-weight: 300; max-width: 600px; margin: 0 auto 3rem;
+            opacity: 0.95;
         }
-        .features { padding: 10rem 0; background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); }
-        .features-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;
-        }
-        .feature-card {
-            background: rgba(255,255,255,0.1); backdrop-filter: blur(15px); border-radius: 30px; padding: 3rem 2rem;
-            border: 1px solid rgba(255,255,255,0.2); transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* CTA Elegant */
+        .cta-primary {
+            display: inline-block; background: white; color: var(--green); padding: 1.2rem 3rem;
+            font-size: 1.2rem; font-weight: 600; border-radius: 50px; text-decoration: none;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             position: relative; overflow: hidden;
         }
-        .feature-card::before {
+        .cta-primary::before {
             content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            transition: left 0.7s; z-index: 1;
+            transition: left 0.6s;
         }
-        .feature-card:hover::before { left: 100%; }
-        .feature-card:hover {
-            transform: translateY(-20px) scale(1.05); box-shadow: var(--shadow-g), 0 30px 60px rgba(0,122,61,0.4);
-            border-color: var(--neon-g);
+        .cta-primary:hover::before { left: 100%; }
+        .cta-primary:hover { transform: translateY(-5px); box-shadow: 0 25px 50px rgba(0,0,0,0.15); }
+        /* Features Luxury */
+        .features { padding: 8rem 0; background: var(--light); }
+        .section-title {
+            text-align: center; font-size: 3rem; font-weight: 700; margin-bottom: 4rem; color: var(--dark);
         }
-        .feature-icon { font-size: 5rem; background: linear-gradient(45deg, var(--green), var(--red)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1.5rem; }
-        .feature h3 { font-size: 2rem; color: var(--white); margin-bottom: 1rem; }
-        .feature p { color: rgba(255,255,255,0.9); line-height: 1.7; }
-        /* WhatsApp Pro */
-        .whatsapp-pro {
-            position: fixed; bottom: 40px; left: 40px; z-index: 1000; width: 70px; height: 70px; border-radius: 50%;
-            background: linear-gradient(45deg, #25D366, #128C7E); box-shadow: var(--shadow-g), 0 0 30px #25D366;
-            display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: white;
-            text-decoration: none; transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); animation: bounce 2s infinite;
+        .features-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;
         }
-        .whatsapp-pro:hover { transform: scale(1.2) rotate(360deg); box-shadow: 0 0 50px #25D366; }
-        @keyframes neonGlow { 0%, 100% { text-shadow: 0 0 20px var(--neon-g), 0 0 30px var(--neon-g), 0 0 40px var(--neon-g); } 50% { text-shadow: 0 0 10px var(--neon-g), 0 0 20px var(--neon-g), 0 0 30px var(--neon-g); } }
-        @keyframes flagFloat { 0%, 100% { transform: translate(-50%, -50%) translateY(0px) rotateY(0deg); } 50% { transform: translate(-50%, -50%) translateY(-20px) rotateY(180deg); } }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
-        footer { background: rgba(0,0,0,0.9); color: var(--white); text-align: center; padding: 3rem 0; }
-        @media (max-width: 768px) { .container { padding: 0 1rem; } .features { padding: 5rem 0; } }
+        .feature {
+            background: white; padding: 3rem 2.5rem; border-radius: 24px; text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08); transition: all 0.4s ease;
+            border-top: 4px solid transparent;
+        }
+        .feature:nth-child(1) { border-top-color: var(--green); }
+        .feature:nth-child(2) { border-top-color: var(--red); }
+        .feature:nth-child(3) { border-top-color: var(--gold); }
+        .feature:hover {
+            transform: translateY(-12px); box-shadow: 0 35px 80px rgba(0,0,0,0.12);
+        }
+        .feature-icon {
+            width: 100px; height: 100px; margin: 0 auto 2rem; background: var(--light);
+            border-radius: 24px; display: flex; align-items: center; justify-content: center;
+            font-size: 2.5rem; color: var(--green);
+        }
+        .feature h3 { font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem; color: var(--dark); }
+        .feature p { color: #666; font-size: 1.1rem; }
+        /* WhatsApp Elegant */
+        .whatsapp-float {
+            position: fixed; bottom: 30px; left: 30px; z-index: 1000;
+            width: 60px; height: 60px; border-radius: 50%; background: #25D366;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4); display: flex; align-items: center;
+            justify-content: center; font-size: 1.8rem; color: white; text-decoration: none;
+            transition: all 0.3s ease; animation: float 3s ease-in-out infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 15px 40px rgba(37,211,102,0.6); }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        footer {
+            background: var(--dark); color: white; text-align: center; padding: 3rem 0;
+        }
+        footer a { color: var(--gold); text-decoration: none; }
+        @media (max-width: 768px) {
+            .container { padding: 0 1.5rem; } .section-title { font-size: 2.2rem; }
+            .hero-content { padding: 1rem; }
+        }
     </style>
 </head>
 <body>
-    <canvas id="particles"></canvas>
-    <div class="hero">
-        <div>
+    <section class="hero">
+        <div class="hero-content">
             <h1>مشاريع الإمارات</h1>
-            <p class="tagline">متاجر إلكترونية مخصصة 100% للإمارات 🇦🇪 | WooCommerce | Dropshipping | Google Ads Pro</p>
+            <p>متاجر إلكترونية ومواقع مخصصة 100% للسوق الإماراتي<br>WooCommerce • Dropshipping • Google Ads • SEO محلي</p>
+            <a href="https://wa.me/201110760081?text=مرحبا، مهتم بمتجر إلكتروني للإمارات 🇦🇪" class="cta-primary">
+                ابدأ مشروعك الآن <i class="fas fa-arrow-left" style="margin-right: 10px;"></i>
+            </a>
         </div>
-    </div>
+    </section>
     <section class="features">
         <div class="container">
+            <h2 class="section-title">خدماتنا الاحترافية</h2>
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-store"></i></div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
                     <h3>متاجر WooCommerce</h3>
-                    <p>تصميم متاجر dropshipping مخصصة للسوق الإماراتي بدفع AED، شحن محلي، وتكامل Noonc/PayTabs.</p>
+                    <p>تصميم متاجر dropshipping كاملة مع دفع AED، شحن داخل الإمارات، وتكامل Noonc.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-bullhorn"></i></div>
                     <h3>إعلانات ممولة</h3>
-                    <p>Google Ads، Meta، TikTok مُحسَّن لـ UAE مع Merchant Center، SEO محلي، وتحليلات Google Analytics 4.</p>
+                    <p>حملات Google Ads وMeta مُحسَّنة للـ UAE مع Merchant Center وتحليلات متقدمة.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>تطوير سريع</h3>
-                    <p>GitHub Actions، Apps Script، automation – إطلاق متجر كامل في 72 ساعة مع schema markup وPWA.</p>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-code"></i></div>
+                    <h3>تطوير مخصص</h3>
+                    <p>مواقع GitHub Pages سريعة مع schema markup، PWA، وautomation عبر Apps Script.</p>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>&copy; 2026 مشاريع الإمارات | مصممة في القاهرة للـ UAE 🇪🇬🇦🇪 | <a href="https://wa.me/201110760081" style="color:var(--gold);">تواصل الآن</a></p>
+            <p>&copy; 2026 مشاريع الإمارات | <a href="https://wa.me/201110760081">تواصل واتساب +201110760081</a></p>
         </div>
     </footer>
-    <a href="https://wa.me/201110760081?text=مرحبا! عايز متجر إلكتروني مخصص للإمارات 🇦🇪" class="whatsapp-pro" target="_blank">
+    <a href="https://wa.me/201110760081?text=مرحبا من موقع مشاريع الإمارات! 🇦🇪" class="whatsapp-float" title="واتساب">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <script>
-        // Particles JS (مبهر)
-        const canvas = document.getElementById('particles');
-        const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth; canvas.height = window.innerHeight;
-        let particles = [];
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 3 + 1;
-                this.speedX = Math.random() * 1 - 0.5;
-                this.speedY = Math.random() * 1 - 0.5;
-                this.color = `hsl(${Math.random()*60 + 120}, 100%, 60%)`; // أخضر إماراتي
-            }
-            update() {
-                this.x += this.speedX; this.y += this.speedY;
-                if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
-                if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
-            }
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-        function init() {
-            particles = [];
-            for (let i = 0; i < 100; i++) particles.push(new Particle());
-        }
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => { p.update(); p.draw(); });
-            requestAnimationFrame(animate);
-        }
-        init(); animate();
-        window.addEventListener('resize', () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; init(); });
-        // UAE Time
-        setInterval(() => document.querySelector('.tagline')?.insertAdjacentHTML('beforeend', ` | ${new Date().toLocaleString('ar-AE', {timeZone: 'Asia/Dubai'})}`), 10000);
-    </script>
 </body>
 </html>
